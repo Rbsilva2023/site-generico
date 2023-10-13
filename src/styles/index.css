@@ -1,0 +1,15 @@
+@import url(globalStyles.css);
+
+.header {
+    background: var(--gray-1);
+    display: flex;
+    padding: 20px 236px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner{
+    background: var(--gray-4)
+}
+
+
