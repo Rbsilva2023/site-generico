@@ -1,15 +1,282 @@
 @import url(globalStyles.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2? family= Handjet:wght@100;400 & family= Inter & family= Poppins:wght@100;400 & family= Roboto:wght@ 400;500 & display=swap');
+
+body {
+    max-width: 1263px;
+
+}
 
 .header {
-    background: var(--gray-1);
     display: flex;
     padding: 20px 236px;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+    background: var(--gray-1);
+    border-bottom: 2px solid var(--brand-1);
+}
+
+.header__button {
+    height: 40px;
+    padding: 10px 22px;
+    background: var(--gray-2);
+    color: var(--gray-7);
+    border: 1px solid var(--gray-7);
+    border-radius: 2px;
+}
+
+.header__button:hover{
+    color: var(--brand-1);
+    background: var(--gray-1)
+
 }
 
 .banner{
-    background: var(--gray-4)
+    display: flex;
+    width: 140vh;
+    padding: 200px 236px;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    background: var(--gray-2);
+}
+
+.banner__title{
+    color: var(--gray-6);
+    font-size: 35px;
+ 
+
+}
+
+.banner__title--span {
+    color: var(--brand-1);
+}
+
+.banner__text{
+    text-align: center;
+    color: var(--gray-4);
+    font-size: 14px;
+    width: 770px;
+    font-size: 'Inter';
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.banner__button{
+    border: 1px solid var(--brand-1);
+    background: var(--brand-1);
+    color: var(--gray-7);
+    align-items: center;
+    font-size: 10px;
+    height: 40px;
+    width: 80px;
+    justify-content: center; 
+}
+
+.banner__button:hover {
+    color: var(--brand-1);
+    background: rgb(20, 20, 32);
+}
+
+.about__container{
+    background: var(--gray-1);
+    display: flex;
+    flex-direction: row;
+    padding: 82px 236px;
+    align-items: center;
+   
+}
+
+.about__title {
+    color: var(--gray-6);
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-right: 230px;
+}
+
+.about__text {
+    color: var(--gray-5);
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Inter';
+    line-height: 150% ;
+}
+
+.frequently__questions__section {
+    display: flex;
+    padding: 82px 236px;
+    align-items: flex-start;
+    gap: 56px;
+    background: var(--gray-2);
+}
+
+.frequently__questions__container {
+    display: flex;
+    width: 620px;
+    padding-right: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 33px;
+    align-self: stretch;
+}
+
+.frequently__questions__title {
+    color: var(--gray-6);
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.frequently__questions__text{
+    color: var(--gray-4);
+    text-align: justify;
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.frequently__questions__button{
+    display: flex;
+    height: 35px;
+    padding: 20px 25px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--brand-1);
+    background: var(--brand-1);
+    color: var(--gray-7);
+}
+
+.frequently__questions__button:hover {
+    color: var(--brand-1);
+    background: rgb(20, 20, 32);
+}
+
+.questions__answers__container{
+    display: flex;
+    width: 563px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.questions__answers__title{
+    color: var(--gray-6);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40%;
+}
+
+.questions__answers__text {
+    color: var(--gray-4);
+    text-align: justify;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.comments__container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 82px;
+    background: var(--gray-2);
+}    
+
+.personal__coment {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    color: var(--gray-4);
+    margin-left: 36px;
+}
+
+.personal__coment__info{
+    display: flex;
+    width: 192px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-left: 36px;
+
+}
+
+.personal__coment__title {
+    color: var(--gray-6);
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.personal__coment__sub-text {
+   
+    color: var(--gray-4);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.personal__coment__text--container{
+    width: 412px;
+    height: 179px;
+    text-align: justify;
+
+}
+
+.personal__coment__text{
+    width: 300px;
+    height: 300px;
+    color: var(--gray-5);
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 200%;
+    margin-left: 40px;
 }
 
 
+.comments__container__phrase {
+    width: 220px;
+    padding: 40px;
+    position: absolute;
+    right: 250px;
+    background: var(--brand-1);
+   
+}
+.comments__container__phrase--title {
+    color: var(--gray-7);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 160%;
+    margin-right: 20px;
+}
+
+.comments__container__phrase--text {
+    color: var(--gray-7, #F8F9FA);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px;
+
+}
+
+.footer {
+    background: var(--gray-1);
+    display: flex;
+    height: 102px;
+    padding: 5px 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__Title {
+
+}
