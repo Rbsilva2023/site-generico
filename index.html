@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Institucional</title>
     <link rel="stylesheet" href="./src/styles/index.css">
-    <script src="index.js" defer ></script>
+    <script src="./src/scripts/index.js" defer ></script>
 </head>
 
 
 <body>
     <header class="header">
         <img src="./src/assets/logo.svg">
-        <button type="button" class="header__button">Entrar para próxima turma</button>
+        <button id="showMessage"  type="button" class="header__button">Entrar para próxima turma</button>
 
     </header>
 
-    <div class="banner">
-        <h1 class="banner__title">Desenvolvendo <span class="banner__title--span"> suas </span> próximas habilidades</h1>
-        <p class="banner__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-        <button class="banner__button">Sobre nós</button>
-
-    </div>
-
     <main class="menu__container">
+
+        <div class="banner">
+            <h1 class="banner__title">Desenvolvendo <span class="banner__title--span"> suas </span> próximas habilidades</h1>
+            <p class="banner__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <button class="banner__button">Sobre nós</button>
+    
+        </div>
 
     <div class="about__container">
         
@@ -36,7 +36,7 @@
         <div class="frequently__questions__container">
             <h1 class="frequently__questions__title">Dúvidas Frequentes</h1>
             <p class="frequently__questions__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <button class="frequently__questions__button">Entrar para próxima turma</button>
+            <button id="showMessage__two" class="frequently__questions__button">Entrar para próxima turma</button>
         </div>
 
         <div class="questions__answers__container">
@@ -126,9 +126,22 @@
             
         </div>
 
+        <dialog id="modal">
+            <div class="modal__container">
+                <div class="modal__content">
+                    <h3 class="modal__title">Cadastro</h3>
+                    <button id="button-x" class="modal_button--x">X</button>
+                    <p class="modal__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <input class="modal__input" type="email" placeholder="Digitar email" required>
+                    <button class="modal__button" type="submit">Entrar na lista para próxima turma</button>
+                </div>
+            </div>
+        </dialog>
+
     </section>
 
     </main>
+
 
     <footer class="footer">
 

@@ -1,22 +1,18 @@
 @import url(globalStyles.css);
 @import url(reset.css);
+@import url(modal.css);
 @import url('https://fonts.googleapis.com/css2? family= Handjet:wght@100;400 & family= Inter & family= Poppins:wght@100;400 & family= Roboto:wght@ 400;500 & display=swap');
 
-body {
-    max-width: 1263px;
-
-}
 
 .header {
     display: flex;
-    padding: 20px 236px;
-    width: 70%;
-    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-around;
     align-items:center;
     background: var(--gray-1);
     border-bottom: 2px solid var(--brand-1);
     position: fixed;
-    top: 0;
     z-index: 1;
 }
 
@@ -37,7 +33,7 @@ body {
 
 .banner{
     display: flex;
-    width: 140vh;
+    width: 143vh;
     padding: 200px 236px;
     flex-direction: column;
     align-items: center;
@@ -48,8 +44,6 @@ body {
 .banner__title{
     color: var(--gray-6);
     font-size: 35px;
- 
-
 }
 
 .banner__title--span {
@@ -186,11 +180,12 @@ body {
 
 .comments__container {
     display: flex;
+    height: 1057px;
     position: relative;
     flex-direction: column;
     align-items: flex-start;
-    gap: 82px;
     background: var(--gray-2);
+    margin-bottom: 0%;
 }    
 
 .personal__coment {
@@ -255,7 +250,7 @@ body {
     position: sticky;
     left: 700px;
     background: var(--brand-1);
-    bottom: 140px;
+    bottom: 150px;
 }
 .comments__container__phrase--title {
     color: var(--gray-7);
