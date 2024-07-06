@@ -294,7 +294,8 @@ body {
         height: 4rem;
     }
     .header__button {
-        height: 3rem;
+        width: 20%;
+        height: 45px;
         background: var(--gray-2);
         color: var(--gray-7);
         border: 0.063rem solid var(--gray-7);
@@ -303,7 +304,7 @@ body {
     
     .banner {
         display: flex;
-        width: 67%;
+        width: 69%;
         padding: 9.75rem;
         flex-direction: column;
         align-items: center;
@@ -347,6 +348,26 @@ body {
         font-weight: 600;
         white-space: nowrap;
         margin-right: 11rem;
+    }
+
+    .personal__coment__text {
+        width: 44%;
+        color: var(--gray-5);
+        font-family: "Inter";
+        font-size: clamp(0.45rem, 0.104rem + 1.304vw, 0.938rem);
+        font-weight: 400;
+        line-height: 200%;
+        position: relative;
+    }
+
+    .comments__container__phrase {
+        width: 23%;
+        padding: 2rem;
+        position: sticky;
+        left: 43.75rem;
+        background: var(--brand-1);
+        bottom: 9.375rem;
+        margin-right: 10rem;
     }
 
     
